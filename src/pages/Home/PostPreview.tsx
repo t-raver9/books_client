@@ -14,8 +14,14 @@ const PostPreview = ({ post }: Props) => {
         border: "4px solid black",
       }}
     >
-      <div>{post.title}</div>
-      <div>{`Book: ${post.book.title}`}</div>
+      <div
+        style={{
+          fontFamily: "sans-serif",
+          fontWeight: "bold",
+        }}
+      >
+        {post.book.title}
+      </div>
       <div>{`Author: ${post.book.author}`}</div>
       <div>{`Reviewed by: ${post.author}`}</div>
     </div>
